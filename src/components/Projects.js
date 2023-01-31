@@ -8,36 +8,24 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
-  const projects = [
+  const projects1 = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Music Player",
+      description: "Feature Apple Music",
       imgUrl: projImg1,
+      link: "https://github.com/vinhwin1810/music",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Store",
+      description: "MERN stack app",
       imgUrl: projImg2,
+      link: "https://github.com/vinhwin1810/mern",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Client Management",
+      description: "CRUD Operations on Client list",
       imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      link: "https://github.com/vinhwin1810/myStore",
     },
   ];
 
@@ -54,13 +42,7 @@ export const Projects = () => {
                   }
                 >
                   <h2>Projects</h2>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                  </p>
+                  <p>These are my Projects Experiences.</p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
                       variant="pills"
@@ -68,13 +50,13 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                        <Nav.Link eventKey="first">Us</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                        <Nav.Link eventKey="second">You</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                        <Nav.Link eventKey="third">Us again</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -85,28 +67,16 @@ export const Projects = () => {
                     >
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {projects.map((project, index) => {
+                          {projects1.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="section">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                      <Tab.Pane eventKey="second">
+                        <p>These are my other projects</p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                        <p>These are my school projects</p>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
